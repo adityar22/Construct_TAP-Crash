@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Home</name>
+    <events>
+        <event-block sid="2109605295129703">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3432004592432348" type="Touch">
+                    <param id="0" name="Object">button_mulai</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8781140180393042" type="System">
+                    <param id="0" name="Layout">Gameplay</param>
+                </action>
+                <action id="6" name="Stop" sid="6916297592567638" type="Audio">
+                    <param id="0" name="Tag">&quot;a&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6666893407025817">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3544321355991072" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5098517334265284" type="Audio">
+                    <param id="0" name="Audio file">OST Gameplay</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;a&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

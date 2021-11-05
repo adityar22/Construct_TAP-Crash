@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Gameplay</name>
+    <events>
+        <variable constant="0" name="timer" sid="9627264902876564" static="0" type="number">0</variable>
+        <variable constant="0" name="durasilast" sid="1965183369377278" static="0" type="number">25</variable>
+        <variable constant="0" name="object" sid="9523522485847677" static="0" type="number">0</variable>
+        <variable constant="0" name="time_combo" sid="8919550292703852" static="0" type="number">1.25</variable>
+        <variable constant="0" name="time_hit" sid="8580409326516904" static="0" type="number">0.75</variable>
+        <variable constant="0" name="durasi" sid="7945626325424089" static="0" type="number">25</variable>
+        <variable constant="0" name="combo" sid="1668487461948141" static="0" type="number">0</variable>
+        <variable constant="0" name="damage" sid="8808077616420242" static="0" type="number">25</variable>
+        <variable constant="0" name="risk" sid="7749822970185128" static="0" type="number">0</variable>
+        <variable constant="0" name="tap" sid="9011185314542111" static="0" type="number">0</variable>
+        <event-block sid="8982811869816944">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5203493935800178" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9966511969134758" type="Audio">
+                    <param id="0" name="Audio file">OST Gameplay</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;b&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1358976482476635" title="taptap">
+            <sub-events>
+                <event-block sid="6839110966973165">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3534845678270749" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="9276200277950453" type="objek_motor">
+                            <param id="0" name="Frame number">object</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5900365995375209">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1910428929508992" type="System">
+                            <param id="0" name="Interval (seconds)">time_hit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7150064000312327" type="System">
+                            <param id="0" name="Variable">tap</param>
+                            <param id="1" name="Value">choose(1,2,3,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8861855036177588">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1025521853425078" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5460569853396251">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1953081758343388" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="6811257640485471" type="tap">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="915962696963779" type="tap2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1131337466121036" type="tap3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3850312737158266" type="tap4">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6369237329720588">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8923774612234859" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8994163586488771" type="tap">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7457675354151811" type="tap2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6490525939971056" type="tap3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2363232329110929" type="tap4">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7516285617928542">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7609632594971297" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="5805748845596837" type="tap">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7874046759242558" type="tap2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9002532566042478" type="tap3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="283015635568709" type="tap4">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7373732987162281">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1142840631711892" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="6062299745452795" type="tap">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8020590677793994" type="tap2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9638861929750926" type="tap3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3265544444555814" type="tap4">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1102601336645263">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5161137179739423" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1349421157200129">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="4203122901304742" type="Touch">
+                                    <param id="0" name="Object">tap</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="773728477464685" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="9527618977254444" type="Sprite2">
+                                    <param id="0" name="Instance variable">curhealth</param>
+                                    <param id="1" name="Value">damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="4249555344355479" type="Sprite2">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="8510016295146053" type="objek_motor">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9526867101013037">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="3515860332410148" type="Touch">
+                                    <param id="0" name="Object">tap2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="3758174298360425" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="902358529881747" type="Sprite2">
+                                    <param id="0" name="Instance variable">curhealth</param>
+                                    <param id="1" name="Value">damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="5123663918769472" type="Sprite2">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="3674628634310427" type="objek_motor">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6504641992108451">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="3857811339635681" type="Touch">
+                                    <param id="0" name="Object">tap3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="9957904566273929" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="3870974934160924" type="Sprite2">
+                                    <param id="0" name="Instance variable">curhealth</param>
+                                    <param id="1" name="Value">damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="1152585680359978" type="Sprite2">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="9669085474677822" type="objek_motor">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2071135509589891">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="987223517190553" type="Touch">
+                                    <param id="0" name="Object">tap4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="1008200846175251" type="System">
+                                    <param id="0" name="Variable">tap</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="5044533898176182" type="Sprite2">
+                                    <param id="0" name="Instance variable">curhealth</param>
+                                    <param id="1" name="Value">damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="4349811333514288" type="Sprite2">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="3888029656744784" type="objek_motor">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8062378825201479">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4765919367825062" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="2852536614062653" type="System">
+                            <param id="0" name="Variable">durasi</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="2461451380684486" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3440931245013198">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="916369882593011" type="System">
+                            <param id="0" name="Variable">durasi</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5548678035253779" type="System">
+                            <param id="0" name="Variable">durasi</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3151335593427008" type="button_tap">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="4649758115904706" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6344895535059203" type="combo2">
+                            <param id="0" name="Text">combo</param>
+                        </action>
+                        <action id="0" name="Set text" sid="509095980278976" type="durasi3">
+                            <param id="0" name="Text">timer</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="84580451265658" type="System">
+                            <param id="0" name="Group name">&quot;popup_failed&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="517455853295584" type="Audio" />
+                        <action id="-12" name="Set group active" sid="6404995437054865" type="System">
+                            <param id="0" name="Group name">&quot;taptap&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6627091060437763">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="4913644670970686" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5890918055257403">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="8940379378503999" type="Touch">
+                                    <param id="0" name="Object">button_tap</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="3343626097282686" type="System">
+                                    <param id="0" name="Variable">combo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5864249673565684">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9907587382299791" type="System">
+                            <param id="0" name="Interval (seconds)">time_combo</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="175237327679534" type="Touch">
+                            <param id="0" name="Object">button_tap</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8544568294355387" type="System">
+                            <param id="0" name="Variable">combo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6388224653815563" title="health">
+            <sub-events>
+                <event-block sid="5963236488862132">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="7011998464672896" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="453080625276983" type="Sprite">
+                            <param id="0" name="Width">Self.maxwidth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6367074350347554">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7935113322903766" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="7064765448336995" type="Sprite3">
+                            <param id="0" name="Width">Self.maxwidth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2307081312739927">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="2338718739863227" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="4761223867062164" type="Sprite3">
+                            <param id="0" name="Width">Sprite3.maxwidth/Sprite2.maxhealth*Sprite2.curhealth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9254962901906339">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7217554388406418" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="2169339856514237" type="Sprite4">
+                            <param id="0" name="Width">Self.maxwidth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9364612426525618">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8557604071800386" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="5353542273205528" type="Sprite4">
+                            <param id="0" name="Width">Sprite3.maxwidth/Sprite2.maxhealth*Sprite2.curhealth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4938150279131536">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6117966612521663" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="8397894084663433" type="Sprite5">
+                            <param id="0" name="Width">Self.maxwidth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3537818698515686">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8649120292101061" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="6582417170069398" type="Sprite5">
+                            <param id="0" name="Width">Sprite3.maxwidth/Sprite2.maxhealth*Sprite2.curhealth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7667265858885813">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6578040143195855" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="5376845940142863" type="Sprite7">
+                            <param id="0" name="Width">Self.maxwidth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3308179333098377">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3700103780905566" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="8976622437154739" type="Sprite7">
+                            <param id="0" name="Width">Sprite.maxwidth/durasi*timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5505145730162465">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4162064150338703" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">400</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9010684127010571" type="Sprite3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4602593276280682" type="Sprite4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3466961232307626" type="Sprite5">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1661350559990834">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4912736286475937" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2694733047918285" type="Sprite3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4110319461313417" type="Sprite4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2599016601901541" type="Sprite5">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4355540786146204">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3924084450274322" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2980020992503567" type="Sprite3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9013564603157718" type="Sprite4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="847937621680188" type="Sprite5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6645902377644628">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="828694001710283" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6865015333875437" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="1507347337904838" type="System">
+                            <param id="0" name="Group name">&quot;popup&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5549422513813891" type="button_tap">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2184485280572953" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6664199147711587" type="combo">
+                            <param id="0" name="Text">combo</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3623659751609665" type="System">
+                            <param id="0" name="Group name">&quot;taptap&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9083894708641324" type="durasi">
+                            <param id="0" name="Text">timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9977465206096405">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5226232827070995" type="System">
+                            <param id="0" name="Variable">object</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9749498844357571" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="1408769648323029" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="2978065874564156" type="System">
+                            <param id="0" name="Group name">&quot;popup&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2396748444837228" type="button_tap">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="1764267925901902" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4247366160474088" type="popup">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1549043075989747" type="button_lanjut">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="934441942616947" type="combo">
+                            <param id="0" name="Text">combo</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9858866957076306" type="System">
+                            <param id="0" name="Group name">&quot;taptap&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6976146634318902" type="durasi">
+                            <param id="0" name="Text">timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="887156533219537" title="popup">
+            <sub-events>
+                <event-block sid="1996114583867943">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9204160974490794" type="Touch">
+                            <param id="0" name="Object">button_lanjut</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="7553968210112648" type="button_lanjut">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="1900274749625517" type="System">
+                            <param id="0" name="Variable">object</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1165208594515688" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="323969770713767" type="System">
+                            <param id="0" name="Variable">durasi</param>
+                            <param id="1" name="Value">durasilast</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="7336093560552894" type="System">
+                            <param id="0" name="Variable">durasi</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="7013068601310956" type="System">
+                            <param id="0" name="Variable">durasilast</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="990648129991004" type="System">
+                            <param id="0" name="Variable">damage</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="2877859799422429" type="System">
+                            <param id="0" name="Variable">time_hit</param>
+                            <param id="1" name="Value">0.125</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="6887062872905613" type="System">
+                            <param id="0" name="Variable">time_combo</param>
+                            <param id="1" name="Value">0.125</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9484722075477912" type="Sprite2">
+                            <param id="0" name="Instance variable">curhealth</param>
+                            <param id="1" name="Value">Self.maxhealth</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="1470552192145032" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="4437230745644241" type="System">
+                            <param id="0" name="Group name">&quot;taptap&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="2015859233176614" type="System">
+                            <param id="0" name="Group name">&quot;popup&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7231645246941613">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="1222367919929319" type="Touch">
+                            <param id="0" name="Object">button_lanjut</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="9420258544207171" type="button_lanjut">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4361977397885456" type="System">
+                            <param id="0" name="Layout">Home</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="5853697902151397" title="popup_failed">
+            <sub-events>
+                <event-block sid="883794114551733">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="912529137469233" type="Touch">
+                            <param id="0" name="Object">button_ulang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="4239715229821157" type="System" />
+                        <action id="-4" name="Set layer visible" sid="9732953335202225" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="8222477827499941" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Ditilang Ngamuk</name>
+    <description>Ancuri Kendaraan Biar Gak Ditilang</description>
+    <version>1.0.0.0</version>
+    <author>raflessiacerdasteknologi</author>
+    <author-email>cerdasrafflesia@gmail.com</author-email>
+    <author-website>http://rafflesiacerdasteknologi.com</author-website>
+    <app-id>com.TilangNgamok</app-id>
+    <unique-id>3d2x84cdl60tx</unique-id>
+    <saved-with-version>26600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>600</width>
+        <height>800</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>splash</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="tap" sid="7814249294102671">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5827283942034752" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\tap1.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.989583" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.989583" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tap2" sid="6364169864567903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5625227109833737" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\tap2.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.989583" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.989583" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tap3" sid="8169694894871344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2237249890549514" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\tap3.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.989583" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.989583" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tap4" sid="2546907977401808">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2326026027848482" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\tap4.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.989583" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.989583" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="7407424864957911">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite2" sid="4622425346647401">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxhealth" sid="6087896428418779" type="number" />
+                <instance-variable name="curhealth" sid="7172021348159004" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="9999018794210815">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2481694424669218" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="4695270718319373">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="5758685396779995" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="57043066914369" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="1557905167335519">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="335031171156155" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7907919824269636" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="3688913696008241">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="7358670386390792" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9544542088247206" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="873692837625752">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="102423894558482" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="793073095050131" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="4810362033791922">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="6391897282092083" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9005177275214716" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="popup" sid="4429163634423756">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1040074254874087" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\popup.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.28866" />
+                            <point x="0.5" y="0.201031" />
+                            <point x="0.72" y="0.28866" />
+                            <point x="0.931667" y="0.5" />
+                            <point x="0.82" y="0.814433" />
+                            <point x="0.18" y="0.814433" />
+                            <point x="0.0683333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\popup_finish.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="durasi" sid="3207056219876246">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="combo" sid="7009511702350548">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="popup_failed" sid="9238883570192657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2462828300733749" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\popup_failed.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.28866" />
+                            <point x="0.5" y="0.201031" />
+                            <point x="0.72" y="0.28866" />
+                            <point x="0.931667" y="0.5" />
+                            <point x="0.82" y="0.814433" />
+                            <point x="0.18" y="0.814433" />
+                            <point x="0.0683333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_lanjut" sid="9170783631086709">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8807500959759231" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\button_lanjut.png">
+                        <collision-poly>
+                            <point x="0.085" y="0.2125" />
+                            <point x="0.5" y="0.1" />
+                            <point x="0.915" y="0.2125" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.91" y="0.775" />
+                            <point x="0.5" y="0.8875" />
+                            <point x="0.09" y="0.775" />
+                            <point x="0.04" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\button_selesai.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_ulang" sid="3920636996376073">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1104700730121306" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\button_ulang.png">
+                        <collision-poly>
+                            <point x="0.085" y="0.2125" />
+                            <point x="0.5" y="0.1" />
+                            <point x="0.915" y="0.2125" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.91" y="0.775" />
+                            <point x="0.5" y="0.8875" />
+                            <point x="0.09" y="0.775" />
+                            <point x="0.04" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="358516528106969">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2203335104501201" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\title.png">
+                        <collision-poly>
+                            <point x="0.358333" y="0.358333" />
+                            <point x="0.711667" y="0.288333" />
+                            <point x="0.903333" y="0.5" />
+                            <point x="0.5" y="0.756667" />
+                            <point x="0.32" y="0.68" />
+                            <point x="0.113333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_mulai" sid="8333989887981838">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="13756037484443" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\button_mulai.png">
+                        <collision-poly>
+                            <point x="0.085" y="0.2125" />
+                            <point x="0.5" y="0.1" />
+                            <point x="0.915" y="0.2125" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.91" y="0.775" />
+                            <point x="0.5" y="0.8875" />
+                            <point x="0.09" y="0.775" />
+                            <point x="0.04" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg" sid="2879468727024654">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3172641216989393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\bg1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg2" sid="8093720655885468">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774892234961971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\bg2.png">
+                        <collision-poly>
+                            <point x="0.941667" y="0.70625" />
+                            <point x="0.0583333" y="0.70625" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg3" sid="8274101561934351">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1538250458283706">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6493432068785654" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\bg3.png">
+                        <collision-poly>
+                            <point x="0.0516667" y="0.322917" />
+                            <point x="0.948333" y="0.322917" />
+                            <point x="1" y="0.5" />
+                            <point x="0.946667" y="0.666667" />
+                            <point x="0.0533333" y="0.666667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg4" sid="8434084991549035">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9032435854168516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\bg4.png">
+                        <collision-poly>
+                            <point x="0.443333" y="0.3325" />
+                            <point x="0.5" y="0.26875" />
+                            <point x="0.556667" y="0.3325" />
+                            <point x="0.606667" y="0.5" />
+                            <point x="0.525" y="0.64375" />
+                            <point x="0.5" y="0.735" />
+                            <point x="0.478333" y="0.64125" />
+                            <point x="0.385" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="objek_motor" sid="4402206276285494">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="2352808412620196">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="5075936150462049">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5971433825615402" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\objek_motor.png">
+                        <collision-poly>
+                            <point x="0.113333" y="0.55" />
+                            <point x="0.51" y="0.546667" />
+                            <point x="0.686667" y="0.206667" />
+                            <point x="0.93" y="0.516667" />
+                            <point x="0.933333" y="0.906667" />
+                            <point x="0.428333" y="0.905" />
+                            <point x="0.0583333" y="0.903333" />
+                            <point x="0.0575001" y="0.654167" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\objek_sedan.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.996667" y="0.733334" />
+                            <point x="0" y="0.733333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\objek_mobil.png">
+                        <collision-poly>
+                            <point x="0.266667" y="0.218333" />
+                            <point x="0.763334" y="0.245" />
+                            <point x="0.896667" y="0.305" />
+                            <point x="0.956667" y="0.77" />
+                            <point x="0.351667" y="0.768333" />
+                            <point x="0.0466667" y="0.77" />
+                            <point x="0.0933333" y="0.269167" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\objek_truk.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.78" />
+                            <point x="0" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\objek_bus.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.996667" y="0.713333" />
+                            <point x="0" y="0.713333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="5444496560083172">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="durasi3" sid="5445899533367704">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="combo2" sid="7884809412159173">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="3129306906212844">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite7" sid="5067797981715057">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="maxwidth" sid="1789051953483487" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4734467107330437" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gear" sid="5718503678776209">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7650674039656238">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3737239673759052" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\gear.png">
+                        <collision-poly>
+                            <point x="0.19" y="0.19" />
+                            <point x="0.5" y="0.06" />
+                            <point x="0.812" y="0.188" />
+                            <point x="0.94" y="0.5" />
+                            <point x="0.81" y="0.81" />
+                            <point x="0.5" y="0.936" />
+                            <point x="0.192" y="0.808" />
+                            <point x="0.064" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rct" sid="3855084132512056">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1636108568961003">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5488067627045296" speed="5">
+                    <frame duration="1" hotspotX="0.500867" hotspotY="0.5" original-source="D:\Dokumen\RCT\rct.png">
+                        <collision-poly>
+                            <point x="0.377816" y="0.378472" />
+                            <point x="0.616984" y="0.383681" />
+                            <point x="0.968804" y="0.5" />
+                            <point x="0.708839" y="0.708333" />
+                            <point x="0.499133" y="0.428819" />
+                            <point x="0.29636" y="0.703125" />
+                            <point x="0.0571924" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pakpol" sid="8233728155624438">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2654099682717238" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\pakpol.png">
+                        <collision-poly>
+                            <point x="0.294444" y="0.294444" />
+                            <point x="0.5" y="0.0388889" />
+                            <point x="0.527778" y="0.472222" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.580556" y="0.580556" />
+                            <point x="0.5" y="0.988889" />
+                            <point x="0.313889" y="0.686111" />
+                            <point x="0.341667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pakpol2" sid="6392915228640957">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5671566090958585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\projek ngancuri motor\pakpol.png">
+                        <collision-poly>
+                            <point x="0.294444" y="0.294444" />
+                            <point x="0.5" y="0.0388889" />
+                            <point x="0.527778" y="0.472222" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.580556" y="0.580556" />
+                            <point x="0.5" y="0.988889" />
+                            <point x="0.313889" y="0.686111" />
+                            <point x="0.341667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="button_tap" plugin-id="Sprite" sid="455704232628049">
+            <members>
+                <member>tap</member>
+                <member>tap2</member>
+                <member>tap3</member>
+                <member>tap4</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Gameplay.xml</layout>
+        <layout>Home.xml</layout>
+        <layout>splash.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Gameplay.xml</event-sheet>
+        <event-sheet>Home.xml</event-sheet>
+        <event-sheet>splash.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="4">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="27">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="OST Gameplay.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
